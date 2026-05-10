@@ -1,0 +1,191 @@
+/* ========== Carousel (Embla) ========== */
+.embla {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  margin-top: -15px;  /* matches old project */
+}
+@media (max-width: 600px) {
+  .embla {
+    margin-top: -9px;
+  }
+}
+@media (min-width: 600px) and (max-width: 900px) {
+  .embla {
+    margin-top: -15px;
+  }
+}
+.embla__container {
+  display: flex;
+}
+.embla__slide {
+  flex: 0 0 100%;
+  min-width: 0;
+}
+.embla__slide a {
+  display: block;
+  width: 100%;
+}
+.embla__slide img {
+  width: 100%;
+  display: block;
+}
+
+/* Purple spacer under carousel */
+.spacer-purple {
+  height: 12vh;
+  background-color: #8927c8;
+  position: relative;
+  z-index: -1;
+}
+@media (max-width: 900px) {
+  .spacer-purple {
+    display: none;
+  }
+}
+
+/* ========== VBS Banner Section ========== */
+.banner {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+}
+@media (min-width: 600px) {
+  .banner {
+    background-position: center;
+  }
+}
+@media (min-width: 900px) {
+  .banner {
+    background-position: top;
+  }
+}
+.banner .container {
+  flex: 1;
+  text-align: center;
+  color: white;
+  padding: 1rem;
+}
+.banner h1 {
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 0;
+}
+@media (min-width: 900px) {
+  .banner h1 {
+    font-size: 5rem;
+  }
+}
+.banner p {
+  color: white;
+  font-weight: bold;
+  max-width: 80%;
+  margin: 1rem auto;
+}
+@media (max-width: 900px) {
+  .banner p {
+    max-width: 100%;
+  }
+}
+.banner img[alt="button"] {
+  transition: transform 0.3s ease-in-out;
+}
+.banner img[alt="button"]:hover {
+  transform: scale(1.1);
+}
+.bannerimg {
+  display: block;
+  margin-top: -48px;
+  height: 60vh;
+}
+@media (max-width: 900px) {
+  .bannerimg {
+    display: none;
+  }
+}
+
+/* ========== Kids Songs & Jolly Kids Sections ========== */
+.project {
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+.project .container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  box-shadow: none;
+  margin: 0;
+  max-width: 1200px;
+}
+.project .container > div {
+  flex: 1;
+  text-align: center;
+}
+.project h2 {
+  color: white;
+  font-weight: bold;
+  font-size: 32px;
+  margin: 0 0 1rem 0;
+}
+.project p {
+  color: white;
+  font-weight: bold;
+  max-width: 80%;
+  margin: 0 auto 1rem auto;
+  padding: 0 10px;
+}
+@media (max-width: 900px) {
+  .project p {
+    max-width: 100%;
+  }
+}
+.project img[alt="button"] {
+  transition: transform 0.3s ease-in-out;
+}
+.project img[alt="button"]:hover {
+  transform: scale(1.1);
+}
+
+/* TV border & stand */
+.tv-border {
+  border: 8px solid #FA4C2E;
+  border-radius: 2px;
+  display: inline-block;
+  width: 60%;
+}
+@media (max-width: 600px) {
+  .tv-border {
+    width: 80%;
+  }
+}
+.tv-border img {
+  width: 100%;
+  border-radius: 2px;
+}
+.stand {
+  width: 320px;
+  margin-top: -1rem;
+}
+
+/* Library section */
+.library {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+}
