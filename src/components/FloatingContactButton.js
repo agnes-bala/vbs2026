@@ -12,9 +12,11 @@ export default function FloatingContactButton() {
     setMounted(true);
   }, []);
 
+  // 9488375315
+
   // Change these numbers to your actual phone numbers
-  const phoneNumber = "+919876543210";
-  const whatsappNumber = "919876543210";
+  const phoneNumber = "9488375315";
+  const whatsappNumber = "9488375315";
 
   if (!mounted) {
     return null;

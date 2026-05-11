@@ -258,7 +258,7 @@ export default function ChildForm() {
                           />
                           <TextField
                             fullWidth
-                            label="Child Date of Birth"
+                            label="Child DOB (YYYY/MM/DD)"
                             name={`children[${index}].dateOfBirth`}
                             value={p.dateOfBirth}
                             onChange={(e) => {
